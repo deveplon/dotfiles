@@ -20,6 +20,7 @@ set scrolloff=8
 set noshowmode
 set colorcolumn=150
 set signcolumn=yes
+set spelllang=en
 
 call plug#begin('~/.config/nvim/plugged')
 
@@ -42,6 +43,7 @@ Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 Plug 'janko-m/vim-test'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 call plug#end()
 
@@ -203,6 +205,7 @@ nnoremap <leader>gb :GBranches<CR>
 nnoremap <leader>gs :G<CR>
 nnoremap <leader>gf :diffget //2<CR>
 nnoremap <leader>gj :diffget //2<CR>
+nnoremap <leader>mp :MarkdownPreview<CR>
 
 """ Ctrl Remaps
 
