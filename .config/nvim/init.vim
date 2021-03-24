@@ -21,6 +21,7 @@ set noshowmode
 set colorcolumn=150
 set signcolumn=yes
 set spelllang=en
+set clipboard=unnamedplus
 
 call plug#begin('~/.config/nvim/plugged')
 
@@ -65,7 +66,10 @@ hi Normal guibg=NONE ctermbg=NONE
 
 """" Lua config
 
+set omnifunc=v:lua.vim.lsp.omnifunc
+
 lua require'lspconfig'.tsserver.setup{ on_attach=require'completion'.on_attach }
+lua require'lspconfig'.pyls.setup{ on_attach=require'completion'.on_attach }
 lua vim.lsp.callbacks["textDocument/publishDiagnostics"] = function() end
 
 """" Completion-nvim config
