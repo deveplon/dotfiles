@@ -70,6 +70,14 @@ set omnifunc=v:lua.vim.lsp.omnifunc
 
 lua require'lspconfig'.tsserver.setup{ on_attach=require'completion'.on_attach }
 lua require'lspconfig'.pyls.setup{ on_attach=require'completion'.on_attach }
+lua require'lspconfig'.graphql.setup{ on_attach=require'completion'.on_attach }
+lua require'lspconfig'.vuels.setup{ on_attach=require'completion'.on_attach }
+lua require'lspconfig'.html.setup{ on_attach=require'completion'.on_attach }
+lua require'lspconfig'.cssls.setup{ on_attach=require'completion'.on_attach }
+lua require'lspconfig'.dockerls.setup{ on_attach=require'completion'.on_attach }
+lua require'lspconfig'.yamlls.setup{ on_attach=require'completion'.on_attach }
+lua require'lspconfig'.jsonls.setup{ on_attach=require'completion'.on_attach }
+lua require'lspconfig'.sqlls.setup{ cmd={"sql-language-server", "up", "--method", "stdio"}; on_attach=require'completion'.on_attach }
 lua vim.lsp.callbacks["textDocument/publishDiagnostics"] = function() end
 
 """" Completion-nvim config
