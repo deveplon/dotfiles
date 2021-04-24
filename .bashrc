@@ -148,3 +148,4 @@ unset color_prompt force_color_prompt
 # tabtab source for slss package
 # uninstall by removing these lines or running `tabtab uninstall slss`
 [ -f /var/www/janis-middleware-service/node_modules/tabtab/.completions/slss.bash ] && . /var/www/janis-middleware-service/node_modules/tabtab/.completions/slss.bashalias config='/usr/bin/git --git-dir=/home/fizzmod93/.cfg/ --work-tree=/home/fizzmod93'
+

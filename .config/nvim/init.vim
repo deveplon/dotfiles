@@ -70,14 +70,6 @@ set omnifunc=v:lua.vim.lsp.omnifunc
 
 lua require'lspconfig'.tsserver.setup{ on_attach=require'completion'.on_attach }
 lua require'lspconfig'.pyls.setup{ on_attach=require'completion'.on_attach }
-lua require'lspconfig'.graphql.setup{ on_attach=require'completion'.on_attach }
-lua require'lspconfig'.vuels.setup{ on_attach=require'completion'.on_attach }
-lua require'lspconfig'.html.setup{ on_attach=require'completion'.on_attach }
-lua require'lspconfig'.cssls.setup{ on_attach=require'completion'.on_attach }
-lua require'lspconfig'.dockerls.setup{ on_attach=require'completion'.on_attach }
-lua require'lspconfig'.yamlls.setup{ on_attach=require'completion'.on_attach }
-lua require'lspconfig'.jsonls.setup{ on_attach=require'completion'.on_attach }
-lua require'lspconfig'.sqlls.setup{ cmd={"sql-language-server", "up", "--method", "stdio"}; on_attach=require'completion'.on_attach }
 lua vim.lsp.callbacks["textDocument/publishDiagnostics"] = function() end
 
 """" Completion-nvim config
@@ -99,10 +91,12 @@ let g:javascript_plugin_jsdoc = 1
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'javascript': ['eslint'],
+\   'typescript': ['eslint'],
 \}
 
 let g:ale_linters = {
 \   'javascript': ['eslint'],
+\   'typescript': ['eslint'],
 \}
 let g:ale_fix_on_save = 1
 let g:ale_hover_cursor = 1
