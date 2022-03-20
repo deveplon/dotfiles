@@ -1,13 +1,14 @@
 # Window
 window:
   padding:
-    x: 5
+    x: 10
     y: 5
   dimensions:
     columns: 220
     lines: 50
-  decorations: none
-  startup_mode: Windowed
+  decorations: transparent
+  startup_mode: Maximized
+  opacity: 0.95
 
 # Scroll
 scrolling:
@@ -50,8 +51,6 @@ colors:
     magenta: '0xd3869b'
     cyan:    '0x8ec07c'
     white:   '0xebdbb2'
-
-background_opacity: 0.85
 
 cursor:
   style: Block
