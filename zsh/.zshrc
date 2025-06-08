@@ -154,3 +154,8 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
 eval "$(pyenv virtualenv-init -)"
+
+# Created by `pipx` on 2025-06-08 12:49:30
+export PATH="$PATH:/Users/diegofernandoangellondono/.local/bin"
+autoload -U compinit && compinit
+eval "$(register-python-argcomplete pipx)"
