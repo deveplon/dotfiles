@@ -11,10 +11,10 @@ mkdir -p ~/.dotfiles/tmux
 cp -rf ~/.tmux.conf ~/.dotfiles/tmux
 
 ## Nvim
-cp -r ~/.config/nvim ~/.dotfiles/nvim
+cp -r ~/.config/nvim ~/.dotfiles
 
 # Sketchybar
-cp -r ~/.config/sketchybar ~/.dotfiles/sketchybar
+cp -r ~/.config/sketchybar ~/.dotfiles
 
 # Aerospace
 mkdir -p ~/.dotfiles/aerospace

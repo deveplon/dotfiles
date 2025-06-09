@@ -6,5 +6,6 @@ return {
     { "<leader>/", false },
     { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find Files" },
     { "<leader>gf", "<cmd>Telescope git_files<cr>", desc = "Find Git Files" },
+    { "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Find Live Grep" },
   },
 }
